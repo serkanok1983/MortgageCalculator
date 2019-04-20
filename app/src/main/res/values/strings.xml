@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ev Kredisi Hesaplama</string>
+    <string name="kredi_tutari">Kredi Tutarı</string>
+    <string name="faiz_orani">Faiz Oranı</string>
+    <string name="ayl_odm_5y">Aylık Ödeme (5 Yıl)</string>
+    <string name="ayl_odm_7y">Aylık Ödeme (7 Yıl)</string>
+    <string name="ayl_odm_10y">Aylık Ödeme (10 Yıl)</string>
+</resources>

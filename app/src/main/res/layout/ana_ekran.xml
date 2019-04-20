@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    tools:context="com.serkanok.mortgagecalculator.AnaEkran">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kredi_tutari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/baslik"
+        android:layout_below="@+id/baslik"
+        android:layout_marginTop="54dp"
+        android:text="@string/kredi_tutari" />
+
+    <TextView
+        android:id="@+id/faiz_orani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/kredi_tutari"
+        android:layout_below="@+id/kredi_tutari"
+        android:layout_marginTop="24dp"
+        android:text="@string/faiz_orani" />
+
+    <TextView
+        android:id="@+id/ayl_odm_5y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/faiz_orani"
+        android:layout_below="@id/faiz_orani"
+        android:layout_marginTop="54dp"
+        android:text="@string/ayl_odm_5y" />
+
+    <TextView
+        android:id="@+id/ayl_odm_7y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ayl_odm_5y"
+        android:layout_below="@id/ayl_odm_5y"
+        android:layout_marginTop="24dp"
+        android:text="@string/ayl_odm_7y" />
+
+    <TextView
+        android:id="@+id/ayl_odm_10y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ayl_odm_7y"
+        android:layout_below="@id/ayl_odm_7y"
+        android:layout_marginTop="24dp"
+        android:text="@string/ayl_odm_10y" />
+
+    <EditText
+        android:id="@+id/kredi_tutari_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/kredi_tutari"
+        android:layout_alignBottom="@id/kredi_tutari"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/faiz_orani_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/faiz_orani"
+        android:layout_alignBottom="@id/faiz_orani"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/ayl_odm_5y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ayl_odm_5y"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ayl_odm_7y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ayl_odm_7y"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ayl_odm_10y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ayl_odm_10y"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>
