@@ -14,6 +14,9 @@ public class AnaEkran extends AppCompatActivity {
     TextView aylikOdeme5yOutput;
     TextView aylikOdeme7yOutput;
     TextView aylikOdeme10yOutput;
+    TextView toplOdeme5yOutput;
+    TextView toplOdeme7yOutput;
+    TextView toplOdeme10yOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +30,20 @@ public class AnaEkran extends AppCompatActivity {
         aylikOdeme5yOutput = findViewById(R.id.ayl_odm_5y_output);
         aylikOdeme7yOutput = findViewById(R.id.ayl_odm_7y_output);
         aylikOdeme10yOutput = findViewById(R.id.ayl_odm_10y_output);
+        toplOdeme5yOutput = findViewById(R.id.topl_odm_5y_output);
+        toplOdeme7yOutput = findViewById(R.id.topl_odm_7y_output);
+        toplOdeme10yOutput = findViewById(R.id.topl_odm_10y_output);
         krediTutariGirdi.addTextChangedListener(krediTutariIzleyici);
         faizOraniGirdi.addTextChangedListener(faizOraniGirdiIzleyici);
     }
 
     private void sonucGoster() {
         aylikOdeme5yOutput.setText(String.format("%.2f", sonucHesapla(60)));
+        toplOdeme5yOutput.setText(String.format("%.0f", sonucHesapla(60)*60));
         aylikOdeme7yOutput.setText(String.format("%.2f", sonucHesapla(84)));
+        toplOdeme7yOutput.setText(String.format("%.0f", sonucHesapla(84)*84));
         aylikOdeme10yOutput.setText(String.format("%.2f", sonucHesapla(120)));
+        toplOdeme10yOutput.setText(String.format("%.0f", sonucHesapla(120)*120));
     }
 
     private double sonucHesapla(int ay) {

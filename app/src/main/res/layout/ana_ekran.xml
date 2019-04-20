@@ -89,6 +89,14 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/topl_odm_5y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ayl_odm_5y_output"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/ayl_odm_7y_output"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -97,10 +105,26 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/topl_odm_7y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ayl_odm_7y_output"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/ayl_odm_10y_output"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/ayl_odm_10y"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/topl_odm_10y_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ayl_odm_10y_output"
         android:layout_alignParentRight="true"
         android:textStyle="bold" />
 
